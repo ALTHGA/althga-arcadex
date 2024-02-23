@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col-reverse md:flex-row h-svh w-screen md:px-14  py-14 gap-14 justify-center md:items-start items-center overflow-y-auto">
+    <div className="flex flex-col-reverse md:flex-row h-svh w-screen px-8 md:px-14 py-14 gap-14 justify-center md:items-start items-center overflow-y-auto">
       <div className="flex justify-center flex-grow h-full ">
         <div className="bg-gradient-to-b h-full w-fit from-blue-500 via-blue-500 to-blue-300 rounded-xl p-14">
           <h1 className="text-white text-lg font-medium">Entrar em contato</h1>
@@ -79,8 +79,8 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center-center gap-8 flex-grow h-full  ">
-        <div className="flex gap-8  w-full">
+      <div className="flex flex-col items-center-center gap-2 md:gap-8 flex-grow h-full  ">
+        <div className="flex gap-2 md:gap-8  w-full">
           <Input
             {...register("fistName")}
             label="Primeiro Nome"
@@ -120,7 +120,7 @@ export default function Contact() {
         <div className="mt-4 flex justify-end">
           <button
             onClick={handleSubmit(handleSubmitContact)}
-            className="py-2 px-4 bg-blue-500 rounded text-sm text-white hover:bg-blue-700"
+            className="py-2 px-4 mt-4 bg-blue-500 rounded text-sm text-white hover:bg-blue-700"
           >
             Enviar
           </button>
